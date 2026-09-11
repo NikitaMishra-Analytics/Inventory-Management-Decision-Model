@@ -30,7 +30,25 @@ A manufacturing company needs to determine the optimal order quantity for a key 
 
 Ordering too frequently increases ordering costs, while ordering too much at once increases inventory holding costs.
 
-The goal is to find the order quantity that minimizes total annual inventory cost.
+The goal is to find the **order quantity that minimizes total annual inventory cost**.
+
+The analysis was performed in two stages:
+
+### Part I — Deterministic Analysis
+
+1. Built an Economic Order Quantity (EOQ) model in Excel.
+2. Evaluated different order quantities using an Excel Data Table.
+3. Used Excel Solver to identify and verify the optimal order quantity.
+4. Analyzed the relationship between total cost and order quantity.
+5. Performed two-way sensitivity analysis to evaluate the impact of ordering cost and holding-cost rate.
+
+### Part II — Demand Uncertainty
+
+1. Modeled annual demand using a triangular probability distribution.
+2. Ran a 1,000-trial Monte Carlo simulation in R.
+3. Recalculated EOQ, total inventory cost, and annual number of orders for each simulation.
+4. Calculated 95% confidence intervals.
+5. Fit Normal distributions and evaluated goodness of fit using Kolmogorov–Smirnov (KS) tests.
 
 ---
 
